@@ -22,11 +22,22 @@ class App extends Component {
     ]
   };
 
+  buttonClickHandler = () => {
+    console.log("Action button clicked");
+    var tempState = this.state.actionClickedCounter;
+    tempState++;
+    this.setState(
+      {
+        actionClickedCounter: tempState
+      }
+    );
+  };
+
   render() {
     return (
       <div className="App">
        <h3>hello, React Component world of dogs.</h3>
-       <button>Action Clicked: {this.state.actionClickedCounter}</button>
+       <button onClick={this.buttonClickHandler}>Action Clicked: {this.state.actionClickedCounter}</button>
        <Dog name="Max" age="6" />
        <Dog name="Kirby" age="8">I am a sweet dog.</Dog>
        <Dog name="Lola" age="6" />
