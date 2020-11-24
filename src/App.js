@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
        <h3>hello, React Component world of dogs.</h3>
-       <button onClick={this.buttonClickHandler}>Action Clicked: {this.state.actionClickedCounter}</button>
+       <button type="button" className="btn btn-primary" onClick={this.buttonClickHandler}>Action Clicked: {this.state.actionClickedCounter}</button>
        <Dog name="Max" age="6" />
        <Dog name="Kirby" age="8">I am a sweet dog.</Dog>
        <Dog name="Lola" age="6" />
