@@ -1,8 +1,11 @@
 import React from 'react';
 
-const dog = () => {
+const dog = (props) => {
   return (
-    <p>first dog</p>
+    <div>
+      <p>Hello.  My name is {props['name']}.  I am {props['age']} years old.</p>
+      <p>{props['children']}</p>
+    </div>
   )
 }
 
