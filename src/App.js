@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import './App.css';
+import Menu from './Menu/Menu';
 import Dog from './Dog/Dog';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+       <Menu />
        <h3>hello, React Component world of dogs.</h3>
        <button type="button" className="btn btn-primary" onClick={this.buttonClickHandler}>Action Clicked: {this.state.actionClickedCounter}</button>
        <Dog name="Max" age="6" />
