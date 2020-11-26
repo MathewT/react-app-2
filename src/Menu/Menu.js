@@ -5,7 +5,7 @@ const menu = (props) => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
-        <img src="/logo.svg" width="30" height="30" alt="" loading="lazy" />
+        <img src="/logo.svg" width="50" height="50" alt="" loading="lazy" />
         BigBrand
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
