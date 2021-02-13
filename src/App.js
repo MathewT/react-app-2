@@ -34,7 +34,16 @@ class App extends Component {
     );
   };
 
+  renderDoggos = () => {
+    console.log("render doggos");
+    this.state.dogs.forEach(dog => {
+      console.log(dog["name"]);
+      console.log(dog["age"]);
+    })
+  };
+
   render() {
+    this.renderDoggos();
     return (
       <div className="App">
        <Menu />

@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+```bash
+docker run --rm -ti -v $HOME/.aws:/root/.aws -v $HOME/.ssh:/root/.ssh -p "3000:3000" -v "$(pwd)":/usr/src/app/src smathewthomas/create-react-app
+
+cd src/ 
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
